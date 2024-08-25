@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block main %}
+<ul>
+    {% for movie in movies %}
+        <li>
+            <h2>{{movie.Title}} ( {{movie.Year}} )</h2>
+            <img src="{{movie.Poster}}"><br><br>
+            {{movie.SearchCount}}
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock main %}

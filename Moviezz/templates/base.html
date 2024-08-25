@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviezz</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input type="text" name="movieTitle" placeholder="Search by Title">
+        <input type="submit"><br><br>
+        <input type="text" name="tTitle" placeholder="Search 1 movie by Title"><input type="submit"><br><br>
+        <input type="text" name="movie1" placeholder="Search 1st movie by Title">
+        <input type="text" name="movie2" placeholder="Search 2nd movie by Title">
+        <input type="submit">
+    </form>
+    {% block main %}
+    
+    {% endblock main %}
+</body>
+</html>
