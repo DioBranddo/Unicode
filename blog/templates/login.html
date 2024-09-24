@@ -1,0 +1,13 @@
+{% extends "user.html" %}
+
+{% block title %}Login{% endblock title %}
+
+{% block form %}
+    <h2>Login</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Login</button>
+    </form>
+    <a href="/register">New User? Register</a>
+{% endblock form %}

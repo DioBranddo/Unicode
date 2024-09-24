@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Single Blog Or Delete</title>
+</head>
+<body>
+    <form method="post" action="{%url 'delete' %}">
+        {% csrf_token %}
+        <input type="text" name="getblog" id="getblog" placeholder="Enter blog title"> 
+        <button type="submit">Delete</button>
+    </form>     
+</body>
+</html>
